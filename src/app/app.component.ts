@@ -8,15 +8,19 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class AppComponent {
   title = 'app';
+  homeContent: DataModel;
   constructor(private db: AngularFireDatabase) {
     // Get data from firebase
-    this.db.list<Content>('/').valueChanges().subscribe(x => console.log(x));
-    this.db.list<Content>('/content').valueChanges().subscribe(x => console.log(x));
+
+    /*this.db.list<DataModel>('/').valueChanges().subscribe(x => console.log(x));
+    this.db.list<any>('/content').valueChanges().subscribe(resp => {
+      // this.homeContent.content = resp[0];
+      console.log(resp);
+    });*/
   }
 }
 
-
-interface Content {
-  test: string;
+interface DataModel {
+  content: string;
   title: string;
 }
