@@ -9,9 +9,9 @@ import { AngularFireDatabase } from 'angularfire2/database';
 export class AppComponent {
   title = 'app';
   constructor(private db: AngularFireDatabase) {
-    console.log(this.db.list('/content'));
-    this.db.database.ref('content').once('value', x => console.log(x));
-    // this.db.list<Content>('/content').valueChanges().subscribe(x => console.log(x));
+    // Get data from firebase
+    this.db.list<Content>('/').valueChanges().subscribe(x => console.log(x));
+    this.db.list<Content>('/content').valueChanges().subscribe(x => console.log(x));
   }
 }
 
