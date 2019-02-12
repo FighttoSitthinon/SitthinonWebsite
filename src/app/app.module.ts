@@ -9,9 +9,9 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
-import { EducationComponent } from './education/education.component';
 import { ProjectComponent } from './project/project.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { WorkexpComponent } from './workexp/workexp.component';
 
 
 @NgModule({
@@ -19,9 +19,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     HomeComponent,
     AboutmeComponent,
-    EducationComponent,
     ProjectComponent,
-    NavbarComponent
+    NavbarComponent,
+    WorkexpComponent
   ],
   imports: [
     BrowserModule,

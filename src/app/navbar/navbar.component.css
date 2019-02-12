@@ -5,5 +5,21 @@ div.sticky {
     padding: 5px;
     background-color: coral;
     width: 100%;
-    height: 50px;
+    height: 55px;
+  }
+  button{
+    color: chocolate;
+    width: 150px;
+    height: 42.5px;
+    background-color: white;
+    border-radius: 25px;
+    border-style: hidden;
+    margin-right: 30px;
+  }
+  div.row{
+      padding-left: 5%;
+  }
+  h2{
+      color: white;
+      margin-right:5%;
   }
