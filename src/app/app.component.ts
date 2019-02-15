@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
@@ -6,21 +6,24 @@ import { AngularFireDatabase } from 'angularfire2/database';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'app';
-  homeContent: DataModel;
-  constructor(private db: AngularFireDatabase) {
+export class AppComponent implements OnInit {
+
+  homeData: any;
+  aboutData: any;
+  workexpData: any;
+  projectData: any;
+
+  constructor(private db: AngularFireDatabase) {}
+
+  ngOnInit() {
     // Get data from firebase
-
-    /*this.db.list<DataModel>('/').valueChanges().subscribe(x => console.log(x));
-    this.db.list<any>('/content').valueChanges().subscribe(resp => {
-      // this.homeContent.content = resp[0];
-      console.log(resp);
-    });*/
+    this.db.list<any>('/').valueChanges().subscribe(resp => {
+      this.homeData = resp[0].home;
+      this.aboutData = resp[0].aboutme;
+      this.workexpData = resp[0].workexp;
+      this.projectData = resp[0].project;
+      console.log(resp[0]);
+    });
   }
-}
 
-interface DataModel {
-  content: string;
-  title: string;
 }

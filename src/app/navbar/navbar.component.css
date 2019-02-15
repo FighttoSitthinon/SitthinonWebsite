@@ -1,4 +1,5 @@
-div.sticky {
+@media screen and (min-width: 900px) {
+  div.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -17,9 +18,25 @@ div.sticky {
     margin-right: 30px;
   }
   div.row{
-      padding-left: 5%;
+    padding-left: 5%;
   }
   h2{
-      color: white;
-      margin-right:5%;
+    color: white;
+    margin-right:5%;
   }
+}
+
+@media screen and (max-width: 900px){
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: coral;
+    width: 100%;
+    height: 55px;
+  }
+  div.row#navbar1{
+    visibility:collapse;
+  }
+}
