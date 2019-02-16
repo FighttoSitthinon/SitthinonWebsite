@@ -1,7 +1,7 @@
 .panel{
     background-color: #1A535C;
     width: 100%;
-    height: 650px;
+    height: 100%;
     background-size: cover;
 }
 .content{
@@ -9,9 +9,24 @@
     padding-left: 7%;
     padding-right: 7%;
     text-align: left;
-    color: white;
 }
 hr{
     color: white;
     background-color: white;
+}
+h1{
+    color: white;
+}
+div.card{
+    margin: 35px;
+    background-color: rgba(243, 237, 237, 0.877);
+    border: 3px white solid; 
+}
+div.card:hover{
+    transition-duration: 0.2s;
+    border: 4px rgb(252, 179, 236) solid; 
+}
+
+div.row{
+    text-align: center;
 }
