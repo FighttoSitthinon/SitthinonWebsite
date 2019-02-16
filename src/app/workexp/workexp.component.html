@@ -3,7 +3,22 @@
         <h1>My Work Experiences </h1>
         <hr>
         <div>
-    
+          <div class="row" *ngIf="data">
+            <div class="col-md-12">
+              <div class="main-timeline8">
+                <div class="timeline" *ngFor="let item of data.content">
+                  <span class="timeline-icon"></span>
+                  <a href="{{item.ref}}"><span class="year">{{item.time}}</span></a>
+                  <div class="timeline-content">
+                    <h3 class="title">{{item.title}}</h3>
+                    <p class="description">
+                      {{item.desc}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 </div>
