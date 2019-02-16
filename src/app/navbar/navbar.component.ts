@@ -10,6 +10,24 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+    window.addEventListener('load', () => {
+      checkWindowSize();
+    });
 
+    window.addEventListener('resize', () => {
+      checkWindowSize();
+    });
+  }
 }
+
+function checkWindowSize(): void {
+  if (window.innerWidth <= 670) {
+    console.log(window.innerWidth);
+    document.getElementById('navbar1').setAttribute('hidden', 'hidden');
+    document.getElementById('navbar2').removeAttribute('hidden');
+  } else {
+    document.getElementById('navbar1').removeAttribute('hidden');
+    document.getElementById('navbar2').setAttribute('hidden', 'hidden');
+  }
+}
+
