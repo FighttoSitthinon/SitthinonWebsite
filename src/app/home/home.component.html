@@ -1,9 +1,9 @@
 <div class="panel">
   <div class="container">
     <div *ngIf="data">
-      <h1>{{data.title}}</h1>
+      <h1 [innerHTML]="data.title"></h1>
       <hr>
-      <h2>{{data.content}}</h2>
+      <h2 [innerHTML]="data.content"></h2>
     </div>
   </div>
 </div>
