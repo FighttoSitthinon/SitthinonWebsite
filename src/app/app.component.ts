@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
       this.aboutData = resp[0].aboutme;
       this.workexpData = resp[0].workexp;
       this.projectData = resp[0].project;
-      console.log(resp[0]);
+      // console.log(resp[0]);
     });
   }
 

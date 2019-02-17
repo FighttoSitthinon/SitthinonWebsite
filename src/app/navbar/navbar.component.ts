@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
 
 function checkWindowSize(): void {
   if (window.innerWidth <= 670) {
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
     document.getElementById('navbar1').setAttribute('hidden', 'hidden');
     document.getElementById('navbar2').removeAttribute('hidden');
   } else {

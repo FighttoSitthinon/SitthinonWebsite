@@ -3,7 +3,7 @@
     <h1 *ngIf="data">{{data.title}}</h1>
     <hr>
     <div>
-      <div class="row">
+      <div class="row" *ngIf="data">
         <div *ngFor="let item of data.content">
           <div class="card" style="width:300px">
             <div class="card-body">
