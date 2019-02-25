@@ -13,7 +13,9 @@ export class AppComponent implements OnInit {
   workexpData: any;
   projectData: any;
 
-  constructor(private db: AngularFireDatabase) {}
+  constructor(private db: AngularFireDatabase) {
+    localStorage.removeItem('firebase:previous_websocket_failure');
+  }
 
   ngOnInit() {
     // Get data from firebase
