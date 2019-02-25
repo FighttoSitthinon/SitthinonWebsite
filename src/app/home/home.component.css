@@ -4,6 +4,7 @@
     height: 100%;
     background-size: cover;
     color: white;
+    font-size: 65px;
 }
 div.container{
     padding-top: 14%;
@@ -16,4 +17,19 @@ hr{
     margin-left: 15%;
     margin-right: 15%;
     background-color: white;
+}
+@media screen and (max-width: 670px){
+    .panel{
+        font-size: 200%;
+    }
+    h2{
+        font-size: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    h1{
+        font-size: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

@@ -47,15 +47,15 @@ div.row{
 @media screen and (max-width: 670px){
  
   img{
-    margin-right: 30px;
+    margin-right: 25px;
     padding-top: 5px;
-    height: 40px; 
-    width: 40px;
+    height: 35px; 
+    width: 35px;
   }
   img:hover{
     transition-duration: 0.2s;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
  
 }
