@@ -10,10 +10,9 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    window.addEventListener('load', () => {
-      checkWindowSize();
-    });
-
+    // on loaded
+    checkWindowSize();
+    // on resized
     window.addEventListener('resize', () => {
       checkWindowSize();
     });

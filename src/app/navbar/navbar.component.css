@@ -27,7 +27,7 @@ div.row{
     background-color: white;
     border-radius: 25px;
     border-style: hidden;
-    margin-right: 30px;
+    margin-right: 35px;
   }
 }
 
@@ -47,7 +47,6 @@ div.row{
 @media screen and (max-width: 670px){
  
   img{
-    margin-right: 25px;
     padding-top: 5px;
     height: 35px; 
     width: 35px;
