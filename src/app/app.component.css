@@ -1,0 +1,17 @@
+#loading{
+    color: cornflowerblue;
+    font-style: inherit;
+    animation: loadPageAnimation 0.5s infinite;
+    text-align:center; 
+    padding:20%;
+  }
+  
+  @keyframes loadPageAnimation{
+    50% {
+      color: lightpink;
+    }
+    100% {
+      color: cornflowerblue;
+    }
+  }
+  

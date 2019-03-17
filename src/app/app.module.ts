@@ -12,6 +12,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectComponent } from './project/project.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WorkexpComponent } from './workexp/workexp.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { WorkexpComponent } from './workexp/workexp.component';
     AboutmeComponent,
     ProjectComponent,
     NavbarComponent,
-    WorkexpComponent
+    WorkexpComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

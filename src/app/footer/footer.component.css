@@ -1,0 +1,11 @@
+div.row{
+    padding-top: 15px;
+    text-align: center;
+    background-color: coral;
+}
+p{
+    color: white;
+    margin-left: 36%;
+    margin-right: 36%;
+    font-size: 18px;
+}

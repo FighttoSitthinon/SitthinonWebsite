@@ -1,10 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div style="text-align:center" *ngIf="checkLoadData">
     <app-home id="homeCom" [data]="homeData"></app-home>
     <app-navbar></app-navbar>
     <app-aboutme id="aboutCom" [data]="aboutData"></app-aboutme>
     <app-workexp id="expCom" [data]="workexpData"></app-workexp>
     <app-project id="projectCom" [data]="projectData"></app-project>
+    <app-footer [data]="footerData"></app-footer>
+</div>
+
+<div id="loading" *ngIf="!checkLoadData">
+    <h1 style="color:coral;">Loading...</h1>
 </div>
 
 

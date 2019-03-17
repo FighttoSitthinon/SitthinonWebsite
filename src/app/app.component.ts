@@ -8,10 +8,12 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class AppComponent implements OnInit {
 
+  checkLoadData = false;
   homeData: any;
   aboutData: any;
   workexpData: any;
   projectData: any;
+  footerData: any;
 
   constructor(private db: AngularFireDatabase) {
     localStorage.removeItem('firebase:previous_websocket_failure');
@@ -24,6 +26,8 @@ export class AppComponent implements OnInit {
       this.aboutData = resp[0].aboutme;
       this.workexpData = resp[0].workexp;
       this.projectData = resp[0].project;
+      this.footerData = resp[0].footer;
+      this.checkLoadData = true;
       // console.log(resp[0]);
     });
   }
