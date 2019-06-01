@@ -18,15 +18,15 @@ h1{
     color: white;
 }
 div.card{
-    margin: 35px;
-    background-color: rgba(243, 237, 237, 0.877);
-    border: 3px white solid; 
+    background-color: white;
+    border: 3px #444545 solid; 
+    margin-bottom: 10px;
 }
 div.card:hover{
     transition-duration: 0.2s;
-    border: 4px rgb(252, 179, 236) solid; 
+    border: 3px #D2F898 solid; 
+}
+div.row{
+    text-align: left;
 }
 
-div.row{
-    text-align: center;
-}
