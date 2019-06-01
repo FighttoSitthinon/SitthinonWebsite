@@ -24,17 +24,20 @@ a{
     margin: 35px;   
 }
 #profile{
-    width: 85%;
+    width: 80%;
     height: auto;
+    /* border-radius: 120%; */
 }
+
 #logo{
     width: 50%;
     height: auto;
 }
 p{
-    padding-inline-start: 50px;
+    padding-inline-start: 40px;
     font-size: 22px;
 }
 span{
     margin-right: 20px;
 }
+

@@ -11,11 +11,9 @@ div.sticky {
 
 h2{
   color: white;
-  margin-inline-start: 3%;
-  margin-inline-end: 3%;
 }
 
-#navbar1{
+#navbar1, #navbar2{
   margin:auto;
 }
 
