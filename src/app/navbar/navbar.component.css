@@ -11,37 +11,31 @@ div.sticky {
 
 h2{
   color: white;
-  margin-right:30px;
+  margin-inline-start: 3%;
+  margin-inline-end: 3%;
 }
 
-div.row{
-  padding-left: 5%;
+#navbar1{
+  margin:auto;
 }
 
-@media screen and (min-width: 900px) {
-
-  button{
-    color: coral;
-    width: 150px;
-    height: 43px;
-    background-color: white;
-    border-radius: 25px;
-    border-style: hidden;
-    margin-right: 35px;
-  }
+#navbar1 > a{
+  width: 16%;
+  height: 43px;
+  margin-inline-start: 1%;
+  margin-inline-end: 1%;
+  color: coral;
+  background-color: white;
+  border-radius: 25px;
+  border-style: hidden;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-@media screen and (max-width: 900px) {
-  button{
-    color: coral;
-    width: 100px;
-    height: 43px;
-    background-color: white;
-    border-radius: 25px;
-    border-style: hidden;
-    margin-right: 30px;
-    content: "Hi";
-  }
+#navbar1 > a:hover{
+  transition-duration: 0.2s;
+  color: white;
+  background-color: coral;
 }
 
 @media screen and (max-width: 670px){

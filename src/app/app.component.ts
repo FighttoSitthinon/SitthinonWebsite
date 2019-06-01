@@ -28,7 +28,6 @@ export class AppComponent implements OnInit {
       this.projectData = resp[0].project;
       this.footerData = resp[0].footer;
       this.checkLoadData = true;
-      // console.log(resp[0]);
     });
   }
 
