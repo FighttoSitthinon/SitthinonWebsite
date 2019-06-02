@@ -26,7 +26,7 @@ a{
 #profile{
     width: 80%;
     height: auto;
-    /* border-radius: 120%; */
+    border-radius: 18%;
 }
 
 #logo{
@@ -34,10 +34,10 @@ a{
     height: auto;
 }
 p{
-    padding-inline-start: 40px;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
     font-size: 22px;
 }
 span{
     margin-right: 20px;
 }
-
