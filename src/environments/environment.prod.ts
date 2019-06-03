@@ -1,11 +1,12 @@
 export const environment = {
   production: true,
   firebase: {
-    apiKey: 'AIzaSyAHJvlTqE-K7RVGrySv1CbHz8FxhX6Dnfk',
-    authDomain: 'sitthinonwebsite.firebaseapp.com',
-    databaseURL: 'https://sitthinonwebsite.firebaseio.com',
-    projectId: 'sitthinonwebsite',
-    storageBucket: 'sitthinonwebsite.appspot.com',
-    messagingSenderId: '1097465210869'
+    apiKey: 'AIzaSyCNoB_KUlhv3xgUMp9fiWGqa2OpeHU-f2k',
+    authDomain: 'fight-sitthinon.firebaseapp.com',
+    databaseURL: 'https://fight-sitthinon.firebaseio.com',
+    projectId: 'fight-sitthinon',
+    storageBucket: '',
+    messagingSenderId: '316176439391',
+    appId: '1:316176439391:web:744426f98fd69a27'
   }
 };
