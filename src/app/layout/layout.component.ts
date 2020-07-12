@@ -14,4 +14,16 @@ export class LayoutComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  scrollToPosition(id) {
+    const position = document.getElementById(id).offsetTop;
+
+    console.log('position', position);
+    window.scrollTo({
+      top: position - 65,
+      behavior: 'smooth'
+  });
+  }
 }
+
+

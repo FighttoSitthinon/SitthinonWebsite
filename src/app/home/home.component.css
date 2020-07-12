@@ -66,11 +66,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 40vw;
+    width: 48vw;
     border-radius: 0 0 10px 0;
 }
-
-
 
 .main-profile{
     width: 100%;
@@ -108,7 +106,7 @@
     text-transform: uppercase;
     padding-top: 50px;
     margin-bottom: 30px;
-    width: 300px;
+    max-width: 300px;
 }
 
 .page.page-2 .page-card{
@@ -287,3 +285,110 @@
     }
 }
 
+.block-ellipsis {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 1.8;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.article{
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+    margin: 7px 16px;
+    transition: 0.25s all;
+}
+
+.article:hover{
+    transform: scale(1.02);
+    box-shadow: 0 1px 8px #dedede;
+}
+
+.article .cover-container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.article .cover-container .cover{
+    width: 100%;
+    height: 100%;
+}
+
+.article .description{
+    padding: 12px;
+    font-weight: 600;
+    height: 95px;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .page.page-1{
+        padding-bottom: 30px;
+    }
+    .main-image-container, .main-profile-container{
+        height: calc(100vh - 140px);
+    }
+    .page.page-2 .page-content{
+        padding-left: 15px;
+    }
+    .page.page-2 .page-card{
+        height: 70vh;
+        position: relative;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .page.page-2 .page-card-3{
+        width: 12px;
+    }
+
+    .page.page-3 .page-card{
+        display: none;
+    }
+
+    .timeline ul li .content h3 {
+        padding: 10px;
+    }
+
+    .list-article{
+        text-align: center;
+    }
+
+    .list-article .article{
+        margin: 7px auto;
+    }
+
+    .timeline{
+        width: 100%;
+    }
+}
+/*  Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    nav{
+        background-color: #fff !important;
+    }
+    .white-card, .white-card-2{
+        display: none;
+    }
+}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+    
+ }
