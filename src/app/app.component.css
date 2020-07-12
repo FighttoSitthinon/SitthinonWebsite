@@ -1,3 +1,6 @@
+
+
+
 #loading {
   text-align: center;
   color: coral;
@@ -14,6 +17,7 @@
   width: 64px;
   height: 64px;
 }
+
 .lds-dual-ring:after {
   content: " ";
   display: block;
@@ -25,6 +29,7 @@
   border-color: coral transparent coral transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
+
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
@@ -33,3 +38,8 @@
     transform: rotate(360deg);
   }
 }
+
+.main-page{
+  background-color: #fff;
+}
+

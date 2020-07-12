@@ -1,16 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center; margin:auto;" *ngIf="checkLoadData">
-    <app-home id="homeCom" [data]="homeData"></app-home>
-    <app-navbar></app-navbar>
-    <app-aboutme id="aboutCom" [data]="aboutData"></app-aboutme>
-    <app-workexp id="expCom" [data]="workexpData"></app-workexp>
-    <app-project id="projectCom" [data]="projectData"></app-project>
-    <app-footer [data]="footerData"></app-footer>
-</div>
-
-<div id="loading" *ngIf="!checkLoadData">
-    <div class="row">
-        <span class="lds-dual-ring"></span>
-        <h2>Loading...</h2>
+<div class="main-page">
+    <app-layout></app-layout>
+    <div class="page-container">
+        <app-home></app-home>
     </div>
 </div>

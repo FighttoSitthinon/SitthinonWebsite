@@ -8,22 +8,13 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
-import { ProjectComponent } from './project/project.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { WorkexpComponent } from './workexp/workexp.component';
-import { FooterComponent } from './footer/footer.component';
-
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutmeComponent,
-    ProjectComponent,
-    NavbarComponent,
-    WorkexpComponent,
-    FooterComponent
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,

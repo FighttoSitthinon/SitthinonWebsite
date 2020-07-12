@@ -1,0 +1,33 @@
+
+
+nav{   
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    height: 65px;
+    background-color: #fff ;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0 0 20px rgba(0,0,0,.05);
+    transition: 0.5s all;
+}
+
+nav.on-top{
+    border-bottom: unset;
+    box-shadow: unset;
+    background-color: transparent;
+}
+
+nav .navbar-brand .logo{
+    width: 40px;
+    border-radius: 49px;
+}
+
+.navbar-nav .nav-link{
+    padding: 8px 16px;
+    transition: 0.2s all;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #f87060;
+}
+
