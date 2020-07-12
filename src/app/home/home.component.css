@@ -1,5 +1,6 @@
 .page{
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -50,7 +51,6 @@
     transform: translate(-50%, -50%);
 }
 
-
 .page.page-1 .white-card{
     background-color: #fff;
     height: 100vh;
@@ -93,5 +93,197 @@
     text-indent: 0;
     border-bottom: 1px solid #4a4a4a;
     margin-bottom: 30px;
+}
+
+
+.page.page-2{
+    position: relative;
+}
+
+.page .title{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 2px solid #4a4a4a;
+    text-transform: uppercase;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.page.page-2 .page-card{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    z-index: 1;
+}
+
+.page.page-2 .page-card-2{
+    background-color: #01696a;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.page.page-2 .page-card-3{
+    background-color: #b2bb1e;
+    height: calc(100vh - 180px);
+    position: absolute;
+    bottom: 180px;
+    left: 0;
+    width: 45px;
+}
+
+.page.page-3 .page-card{
+    background-color: #ffeddf;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+}
+
+
+.image-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img{
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kukps-logo{
+    width: 200px;
+    margin: auto;
+}
+
+.timeline {
+    position: relative;
+    margin: 55px auto 0 auto;
+    width: 90%;
+}
+
+.timeline ul{
+    padding: 0 !important;
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.point {
+    min-width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px #f87060 solid;
+    position: relative;
+    left: 1px;
+}
+
+.timeline ul li .content {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.timeline ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+.timeline ul li .date h4 {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 325px;
+    text-align: center;
+    padding: 7px 12px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #f87060;
+    border: 1px solid #f87060;
+}
+
+.timeline ul li .content h3 {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #39a9db;
+    margin-bottom: 0;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+}
+
+.timeline ul li .content p {
+    padding: 10px 20px;
+    background-color: #fff;
+    margin-top: 0;
+    text-align: center;
+    border: 1px solid #39a9db;
+    border-radius: 0 0 10px 10px ;
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: #b1b0b0;
+}
+
+@media (max-width: 800px) {
+    .point {
+        min-width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .point {
+        min-width: 12px;
+        height: 12px;
+    }
 }
 
